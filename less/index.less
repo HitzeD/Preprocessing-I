@@ -58,8 +58,19 @@ html, body {
 }
 
 // self additions
+
+// variables
 @dark-shade: rgba(0, 0, 0, 0.1);
-@normal-size: 1.6rem;
+@normal-size: 1.4rem;
+
+// mixins
+.tm20() {
+	margin-top: 20px;
+}
+
+.pm10() {
+	margin-bottom: 10px;
+}
 
 body {
 	width: 880px;
@@ -77,19 +88,33 @@ body {
 
 p {
 	font-size: @normal-size;
+	.pm10;
+
+	@media (max-width: 500px){
+		width: 350px;
+	}
 }
 
 header {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 10px;
 	background-color: @dark-shade;
 	width: 100%;
 	padding: 20px 0;
 
+	@media (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+	}
+
 	h1 {
 		font-size: @normal-size;
 		padding-left: 15px;
+
+		@media (max-width: 500px) {
+			text-align: center;
+			margin-bottom: 10px;
+		}
 	}
 
 	nav a {
@@ -102,23 +127,129 @@ header {
 
 body .main-cont {
 	display: flex;
-	background-color: coral;
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.main-cont {
+	.tm20;
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+	padding: 10px;
 }
 
 .main-cont section {
 	width: 49.5%;
 
+	@media (max-width: 500px){
+		width: 100%;
+	}
+
+	.img-fig {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.img-fig img {
 		width: 270px;
 		height: 282px;
+		margin: 10px;
 	}
 
-	figcaption {
+	.img-fig figcaption {
 		font-size: 1.2rem;
-		// text-align: center;
-		// margin-left: 35px;
+		margin-left: 45px;
+
+		@media (max-width: 500px){
+			margin-left: 30px;
+		}
+	}
+
+	h2 {
+		font-size: 1.7rem;
+		text-align: center;
+		margin-bottom: 5px;
+
+		@media (max-width: 500px){
+			margin-top: 10px;
+		}
+	}
+
+	div {
+
+		@media(max-width: 500px){
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	p {
+		font-size: 1.5rem;
+		padding: 10px;
 	}
 } // end of top section
 
 .exp {
+	.tm20;
+	font-size: @normal-size;
+
+	h2 {
+		font-size: 1.7rem;
+
+		@media (max-width: 500px){
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+	.bottom-cont {
+		display: flex;
+
+		@media (max-width: 500px){
+			flex-direction: column;
+			align-items: center;
+		}
+
+		table {
+			width: 49.5%;
+
+			th {
+				padding: 5px;
+			}
+
+			td {
+				padding: 5px;
+			}
+		}
+
+		.list {
+			width: 49.5%;
+			text-align: center;
+
+			li {
+				padding: 5px;
+			}
+
+			@media (max-width: 500px){
+				.tm20;
+				width: 100%;
+			}
+		}
+	}
+
+} // end of bottom cont
+
+footer {
+	text-align: center;
+	.tm20;
+	background-color: @dark-shade;
+	padding: 20px;
+
+	p{
+		font-size: .8rem;
+	}
 }
