@@ -57,3 +57,41 @@ html, body {
     height: 100%;
 }
 
+// self additions
+
+body {
+	width: 880px;
+	margin: 0 auto;
+	font-size: 62.5%;
+
+	@media (max-width: 800px){
+		width: 600px;
+	}
+
+	@media (max-width: 500px){
+		width: 100%;
+	}
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: 10px;
+
+	h1 {
+		font-size: 1.6rem;
+	}
+
+	nav a {
+		padding: 20px;
+		font-size: 1.6rem;
+		text-decoration: none;
+	}
+
+	img {
+		width: 270px;
+		height: 282px;
+	}
+
+} // end of header
