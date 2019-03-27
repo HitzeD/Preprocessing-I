@@ -57,7 +57,7 @@ html, body {
     height: 100%;
 }
 
-// self additions
+/* self additions */
 
 // variables
 @dark-shade: rgba(0, 0, 0, 0.1);
@@ -96,7 +96,7 @@ p {
 	}
 }
 
-header {
+.container header {
 	display: flex;
 	justify-content: space-between;
 	background-color: @dark-shade;
@@ -143,7 +143,7 @@ body .main-cont {
 	padding: 10px;
 }
 
-.main-cont section {
+.container .main-cont section {
 	width: 49.5%;
 
 	@media (max-width: 500px){
@@ -196,7 +196,7 @@ body .main-cont {
 	}
 } // end of top section
 
-.exp {
+.container .exp {
 	.tm20;
 	font-size: @normal-size;
 
