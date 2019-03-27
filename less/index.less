@@ -58,6 +58,8 @@ html, body {
 }
 
 // self additions
+@dark-shade: rgba(0, 0, 0, 0.1);
+@normal-size: 1.6rem;
 
 body {
 	width: 880px;
@@ -73,25 +75,50 @@ body {
 	}
 }
 
+p {
+	font-size: @normal-size;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
-	margin: 10px;
+	margin-bottom: 10px;
+	background-color: @dark-shade;
+	width: 100%;
+	padding: 20px 0;
 
 	h1 {
-		font-size: 1.6rem;
+		font-size: @normal-size;
+		padding-left: 15px;
 	}
 
 	nav a {
 		padding: 20px;
-		font-size: 1.6rem;
+		font-size: @normal-size;
 		text-decoration: none;
 	}
 
-	img {
+} // end of header
+
+body .main-cont {
+	display: flex;
+	background-color: coral;
+}
+
+.main-cont section {
+	width: 49.5%;
+
+	.img-fig img {
 		width: 270px;
 		height: 282px;
 	}
 
-} // end of header
+	figcaption {
+		font-size: 1.2rem;
+		// text-align: center;
+		// margin-left: 35px;
+	}
+} // end of top section
+
+.exp {
+}

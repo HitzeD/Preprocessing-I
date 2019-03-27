@@ -149,21 +149,37 @@ body {
     width: 100%;
   }
 }
+p {
+  font-size: 1.6rem;
+}
 header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 20px 0;
 }
 header h1 {
   font-size: 1.6rem;
+  padding-left: 15px;
 }
 header nav a {
   padding: 20px;
   font-size: 1.6rem;
   text-decoration: none;
 }
-header img {
+body .main-cont {
+  display: flex;
+  background-color: coral;
+}
+.main-cont section {
+  width: 49.5%;
+}
+.main-cont section .img-fig img {
   width: 270px;
   height: 282px;
+}
+.main-cont section figcaption {
+  font-size: 1.2rem;
 }
