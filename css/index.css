@@ -1,1 +1,305 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 880px;
+  margin: 0 auto;
+  font-size: 62.5%;
+}
+@media (max-width: 800px) {
+  body {
+    width: 600px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+}
+p {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  p {
+    width: 350px;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header h1 {
+  font-size: 1.4rem;
+  padding-left: 15px;
+  font-family: 'Permanent Marker', cursive;
+}
+@media (max-width: 500px) {
+  header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+header nav a {
+  padding: 20px;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+body .main-cont {
+  display: flex;
+}
+@media (max-width: 500px) {
+  body .main-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-cont {
+  margin-top: 20px;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  padding: 10px;
+}
+.main-cont section {
+  width: 49.5%;
+}
+@media (max-width: 500px) {
+  .main-cont section {
+    width: 100%;
+  }
+}
+.main-cont section .img-fig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-cont section .img-fig img {
+  width: 270px;
+  height: 282px;
+  margin: 10px;
+}
+.main-cont section .img-fig figcaption {
+  font-size: 1.2rem;
+  margin-left: 45px;
+}
+@media (max-width: 500px) {
+  .main-cont section .img-fig figcaption {
+    margin-left: 30px;
+  }
+}
+.main-cont section h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+@media (max-width: 500px) {
+  .main-cont section h2 {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .main-cont section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-cont section p {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.exp {
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+.exp h2 {
+  font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  .exp h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.exp .bottom-cont {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .exp .bottom-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.exp .bottom-cont table {
+  width: 49.5%;
+}
+.exp .bottom-cont table th {
+  padding: 5px;
+}
+.exp .bottom-cont table td {
+  padding: 5px;
+}
+.exp .bottom-cont .list {
+  width: 49.5%;
+  text-align: center;
+}
+.exp .bottom-cont .list li {
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .exp .bottom-cont .list {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+footer p {
+  font-size: 0.8rem;
+}
